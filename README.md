@@ -1,73 +1,118 @@
-# Welcome to your Lovable project
+Perfect. I’ll give you a **clean, fully professional README** for your Vite + React portfolio. No Lovable AI references. You can directly replace your current README with this one ✅
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/3e3da57f-81b9-4677-bd24-280943938ba4
+## ✅ Full README for your Portfolio
 
-## How can I edit this code?
+```md
+# Personal Portfolio – Hirusha Chamodya
 
-There are several ways of editing your application.
+A modern and responsive developer portfolio showcasing my projects, skills, and contact information. Built with cutting-edge technologies to ensure fast performance, clean UI, and a polished developer identity online.
 
-**Use Lovable**
+## 🔗 Live Preview
+(Replace this with your deployed URL)
+https://YOUR_DOMAIN_HERE
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3e3da57f-81b9-4677-bd24-280943938ba4) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- React (with TypeScript)
+- Vite (lightning-fast dev + build)
+- Tailwind CSS (utility-first styling)
+- shadcn/ui (beautiful reusable components)
+- Lucide Icons
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✨ Features
 
-Follow these steps:
+- Fully responsive modern UI
+- Smooth animations and interactions
+- Projects showcase with tech stack labels
+- Dedicated Contact section:
+  - Email link triggers new email message
+  - WhatsApp direct chat support (optional)
+- Optimized for performance and SEO
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📦 Folder Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
 ```
 
-**Edit a file directly in GitHub**
+src/
+├── components/
+├── pages/
+├── assets/
+├── data/
+├── App.tsx
+└── main.tsx
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+````
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🚀 Run Locally
 
-## What technologies are used for this project?
+Make sure Node.js and npm are installed.
 
-This project is built with:
+```sh
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Go to project directory
+cd REPO_NAME
 
-## How can I deploy this project?
+# Install dependencies
+npm install
 
-Simply open [Lovable](https://lovable.dev/projects/3e3da57f-81b9-4677-bd24-280943938ba4) and click on Share -> Publish.
+# Run development server
+npm run dev
+````
 
-## Can I connect a custom domain to my Lovable project?
+Project will be available at:
 
-Yes, you can!
+```
+http://localhost:5173/
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🏗️ Build for Production
+
+```sh
+npm run build
+```
+
+Output will be in the `dist` folder.
+
+---
+
+## 📬 Contact
+
+📧 Email: **[chamodyahirusha21@gmail.com](mailto:chamodyahirusha21@gmail.com)**
+🌐 GitHub: [https://github.com/hirusha218](https://github.com/hirusha218)
+🇱🇰 Sri Lanka
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+Feel free to fork and customize.
+
+```
+
+---
+
+### Quick tweaks I can do for you if you want
+
+• Add your **Vercel or GitHub Pages URL**  
+• Add **screenshots** of homepage, projects page, etc.  
+• Add **badge icons** like visitors count, technologies  
+• Add **Skills section with icons**  
+• Add **hero banner** or profile photo
+
+If you drop your **live link** and **repo name**, I’ll update those parts and give you the final polished version to paste directly into GitHub ✅
+```

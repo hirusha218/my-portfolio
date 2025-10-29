@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Download, Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Button } from "@/components/ui/button"; 
+import { Download, Mail, Github, Linkedin, Twitter, MessageSquare } from "lucide-react";
 
 const Hero = () => {
   const handleCvDownload = () => {
@@ -101,8 +101,8 @@ const Hero = () => {
               <a href="https://www.linkedin.com/in/chamodya-hirusha-6a5961262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-primary/50 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://twitter.com/hirusha218" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-accent/50 transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="https://wa.me/94766094691" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-green-500/50 transition-colors">
+                <MessageSquare className="h-5 w-5" />
               </a>
             </div>
           </div>

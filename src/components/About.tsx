@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"; 
 import { Briefcase, Code2, Award, Github, Linkedin, Mail, CheckCircle, Sparkles, Target, Rocket } from "lucide-react";
 
 const About = () => {
@@ -53,9 +53,6 @@ const About = () => {
               <h2 className="text-4xl md:text-6xl font-bold mb-4">
                 <span className="gradient-text">About Me</span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Crafting digital experiences that make a difference
-              </p>
             </motion.div>
             <div className="w-24 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mt-6 rounded-full" />
           </div>
@@ -123,6 +120,11 @@ const About = () => {
                   <Button size="sm" variant="outline" className="w-full glass-card border-primary/50 hover:border-primary" asChild>
                     <a href="https://linkedin.com/in/hirusha218" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="h-4 w-4 mr-2" /> LinkedIn
+                    </a>
+                  </Button>
+                  <Button size="sm" variant="outline" className="w-full glass-card border-green-500/50 hover:border-green-500" asChild>
+                    <a href="https://wa.me/94766094691" target="_blank" rel="noopener noreferrer">
+                      <Briefcase className="h-4 w-4 mr-2" /> WhatsApp
                     </a>
                   </Button>
                   <Button size="sm" variant="ghost" className="w-full glass-card" asChild>

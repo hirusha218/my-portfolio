@@ -174,9 +174,6 @@ const TechStack = () => {
               <h2 className="text-4xl md:text-6xl font-bold mb-4">
                 <span className="gradient-text">Tech Stack</span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                A comprehensive toolkit for building modern, scalable applications
-              </p>
             </motion.div>
             <div className="w-24 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mt-6 rounded-full" />
           </div>

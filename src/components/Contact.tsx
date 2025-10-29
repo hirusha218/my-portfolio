@@ -10,10 +10,11 @@ import { Github, Linkedin, Mail, Twitter, MessageSquare } from "lucide-react";
 import { useState, useRef } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
+import { FaWhatsapp } from "react-icons/fa";
 
 const socialLinks = [
   { icon: Github, label: "GitHub", url: "https://github.com/hirusha218", color: "hover:text-primary" },
-  { icon: MessageSquare, label: "WhatsApp", url: "https://wa.me/94766094691", color: "hover:text-green-500" },
+  { icon: FaWhatsapp , label: "WhatsApp", url: "https://wa.me/94701529611", color: "hover:text-green-500" },
   { icon: Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/chamodya-hirusha-6a5961262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", color: "hover:text-primary" },
   { icon: Mail, label: "Email", url: "mailto:chamodyahirusha21@gmail.com", color: "hover:text-secondary" },
 ];

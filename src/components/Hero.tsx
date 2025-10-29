@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button"; 
-import { Download, Mail, Github, Linkedin, Twitter, MessageSquare } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Download, Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { FaWhatsapp, FaReact, FaMobileAlt, FaNodeJs, FaBolt, FaRobot, FaPalette, FaFire, FaDatabase, FaCloud, FaCog } from "react-icons/fa";
 
 const Hero = () => {
   const handleCvDownload = () => {
@@ -101,8 +102,8 @@ const Hero = () => {
               <a href="https://www.linkedin.com/in/chamodya-hirusha-6a5961262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-primary/50 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://wa.me/94766094691" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-green-500/50 transition-colors">
-                <MessageSquare className="h-5 w-5" />
+              <a href="https://wa.me/94701529611" target="_blank" rel="noopener noreferrer" className="glass-card p-2 rounded-lg border border-border/50 hover:border-green-500/50 transition-colors">
+                <FaWhatsapp className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -138,84 +139,90 @@ const Hero = () => {
 
               {/* Orbit 1 - Inner Circle */}
               {[
-                { icon: "⚛️", label: "React", delay: 0 },
-                { icon: "📱", label: "React Native", delay: 1 },
-                { icon: "🟢", label: "Node.js", delay: 2 },
-                { icon: "⚡", label: "Vite", delay: 3 },
-                { icon: "🤖", label: "AI/ML", delay: 4 },
-              ].map((tech, i) => (
-                <motion.div
-                  key={`inner-${i}`}
-                  className="absolute glass-card rounded-xl p-4 border border-primary/20 hover:border-primary/50 transition-colors group cursor-pointer"
-                  style={{
-                    width: "80px",
-                    height: "80px",
-                  }}
-                  animate={{
-                    x: [
-                      Math.cos((i * Math.PI) / 2 + tech.delay) * 120,
-                      Math.cos((i * Math.PI) / 2 + Math.PI * 2 + tech.delay) * 120,
-                    ],
-                    y: [
-                      Math.sin((i * Math.PI) / 2 + tech.delay) * 120,
-                      Math.sin((i * Math.PI) / 2 + Math.PI * 2 + tech.delay) * 120,
-                    ],
-                  }}
-                  transition={{
-                    duration: 20,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                >
-                  <div className="flex flex-col items-center justify-center h-full">
-                    <span className="text-2xl mb-1">{tech.icon}</span>
-                    <span className="text-[10px] text-muted-foreground group-hover:text-foreground transition-colors">
-                      {tech.label}
-                    </span>
-                  </div>
-                </motion.div>
-              ))}
+                { icon: FaReact, label: "React", delay: 0, color: "text-blue-500" },
+                { icon: FaMobileAlt, label: "React Native", delay: 1, color: "text-blue-600" },
+                { icon: FaNodeJs, label: "Node.js", delay: 2, color: "text-green-500" },
+                { icon: FaBolt, label: "Vite", delay: 3, color: "text-yellow-500" },
+                { icon: FaRobot, label: "AI/ML", delay: 4, color: "text-purple-500" },
+              ].map((tech, i) => {
+                const Icon = tech.icon;
+                return (
+                  <motion.div
+                    key={`inner-${i}`}
+                    className="absolute glass-card rounded-xl p-4 border border-primary/20 hover:border-primary/50 transition-colors group cursor-pointer"
+                    style={{
+                      width: "80px",
+                      height: "80px",
+                    }}
+                    animate={{
+                      x: [
+                        Math.cos((i * Math.PI) / 2 + tech.delay) * 120,
+                        Math.cos((i * Math.PI) / 2 + Math.PI * 2 + tech.delay) * 120,
+                      ],
+                      y: [
+                        Math.sin((i * Math.PI) / 2 + tech.delay) * 120,
+                        Math.sin((i * Math.PI) / 2 + Math.PI * 2 + tech.delay) * 120,
+                      ],
+                    }}
+                    transition={{
+                      duration: 20,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                  >
+                    <div className="flex flex-col items-center justify-center h-full">
+                      <Icon className={`text-2xl mb-1 ${tech.color} group-hover:scale-110 transition-transform`} />
+                      <span className="text-[10px] text-muted-foreground group-hover:text-foreground transition-colors">
+                        {tech.label}
+                      </span>
+                    </div>
+                  </motion.div>
+                );
+              })}
 
               {/* Orbit 2 - Outer Circle */}
               {[
-                { icon: "🎨", label: "UI/UX", delay: 0.5 },
-                { icon: "🔥", label: "Firebase", delay: 1.5 },
-                { icon: "💾", label: "Database", delay: 2.5 },
-                { icon: "☁️", label: "Cloud", delay: 3.5 },
-                { icon: "⚙️", label: "DevOps", delay: 4.5 },
-              ].map((tech, i) => (
-                <motion.div
-                  key={`outer-${i}`}
-                  className="absolute glass-card rounded-lg p-3 border border-accent/20 hover:border-accent/50 transition-colors group cursor-pointer"
-                  style={{
-                    width: "70px",
-                    height: "70px",
-                  }}
-                  animate={{
-                    x: [
-                      Math.cos((i * Math.PI * 2) / 5 + tech.delay) * 180,
-                      Math.cos((i * Math.PI * 2) / 5 + Math.PI * 2 + tech.delay) * 180,
-                    ],
-                    y: [
-                      Math.sin((i * Math.PI * 2) / 5 + tech.delay) * 180,
-                      Math.sin((i * Math.PI * 2) / 5 + Math.PI * 2 + tech.delay) * 180,
-                    ],
-                  }}
-                  transition={{
-                    duration: 25,
-                    repeat: Infinity,
-                    ease: "linear",
-                    delay: i * 0.2,
-                  }}
-                >
-                  <div className="flex flex-col items-center justify-center h-full">
-                    <span className="text-xl mb-1">{tech.icon}</span>
-                    <span className="text-[9px] text-muted-foreground group-hover:text-foreground transition-colors">
-                      {tech.label}
-                    </span>
-                  </div>
-                </motion.div>
-              ))}
+                { icon: FaPalette, label: "UI/UX", delay: 0.5, color: "text-pink-500" },
+                { icon: FaFire, label: "Firebase", delay: 1.5, color: "text-orange-500" },
+                { icon: FaDatabase, label: "Database", delay: 2.5, color: "text-indigo-500" },
+                { icon: FaCloud, label: "Cloud", delay: 3.5, color: "text-cyan-500" },
+                { icon: FaCog, label: "DevOps", delay: 4.5, color: "text-gray-500" },
+              ].map((tech, i) => {
+                const Icon = tech.icon;
+                return (
+                  <motion.div
+                    key={`outer-${i}`}
+                    className="absolute glass-card rounded-lg p-3 border border-accent/20 hover:border-accent/50 transition-colors group cursor-pointer"
+                    style={{
+                      width: "70px",
+                      height: "70px",
+                    }}
+                    animate={{
+                      x: [
+                        Math.cos((i * Math.PI * 2) / 5 + tech.delay) * 180,
+                        Math.cos((i * Math.PI * 2) / 5 + Math.PI * 2 + tech.delay) * 180,
+                      ],
+                      y: [
+                        Math.sin((i * Math.PI * 2) / 5 + tech.delay) * 180,
+                        Math.sin((i * Math.PI * 2) / 5 + Math.PI * 2 + tech.delay) * 180,
+                      ],
+                    }}
+                    transition={{
+                      duration: 25,
+                      repeat: Infinity,
+                      ease: "linear",
+                      delay: i * 0.2,
+                    }}
+                  >
+                    <div className="flex flex-col items-center justify-center h-full">
+                      <Icon className={`text-xl mb-1 ${tech.color} group-hover:scale-110 transition-transform`} />
+                      <span className="text-[9px] text-muted-foreground group-hover:text-foreground transition-colors">
+                        {tech.label}
+                      </span>
+                    </div>
+                  </motion.div>
+                );
+              })}
 
               {/* Floating Particles */}
               {[...Array(8)].map((_, i) => (

@@ -53,9 +53,10 @@ export default function SEOAnalytics({
         new PerformanceObserver((list) => {
           list.getEntries().forEach((entry) => {
             if (entry.entryType === 'first-input') {
-              const fid = entry.processingStart - entry.startTime
+              const fidEntry = entry as PerformanceEventTiming
+              const fid = fidEntry.processingStart - fidEntry.startTime
               console.log('FID:', fid)
-              
+
               if (window.gtag) {
                 window.gtag('event', 'web_vitals', {
                   metric_name: 'FID',
@@ -71,13 +72,14 @@ export default function SEOAnalytics({
         let clsValue = 0
         new PerformanceObserver((list) => {
           list.getEntries().forEach((entry) => {
-            if (!entry.hadRecentInput) {
-              clsValue += entry.value
+            const clsEntry = entry as any
+            if (!clsEntry.hadRecentInput) {
+              clsValue += clsEntry.value
             }
           })
-          
+
           console.log('CLS:', clsValue)
-          
+
           if (window.gtag) {
             window.gtag('event', 'web_vitals', {
               metric_name: 'CLS',
